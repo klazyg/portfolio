@@ -1,0 +1,91 @@
+@import '/styles/main.module.scss';
+
+.section {
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid $colorBorder;
+}
+
+.position {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        transition: transform 0.2s;
+        transform: scale(1.1);
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navlink {
+    font-size: $fontSizeLarge;
+    font-weight: $fontWeightSemiBold;
+    padding: 0.8rem 2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 14px;
+    transition: 1s;
+
+    &:hover {
+        padding: 0.8rem 2rem;
+        border: 0.1rem solid $colorFontWhite;
+        border-radius: 14px;
+        background: $colorBtn;
+    }
+}
+
+.btn {
+    font-size: $fontSizeLarge;
+    font-weight: $fontWeightSemiBold;
+    padding: 0.8rem 2rem;
+    border: 0.1rem solid $colorFontWhite;
+    background: $colorBtn;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.moon {
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+}
+
+.sun {
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+}
