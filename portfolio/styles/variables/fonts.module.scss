@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 // FONT DEFAULT SIZE
 $fontSizeDefault: 16px;
 
-
 // FONT FAMILIES
-$fontDefault: 'Poppins', sans-serif;
-
+$fontDefault: 'Montserrat', sans-serif;
 
 // FONT-WEIGHTS
 $fontWeightMedium: 500;
@@ -15,12 +13,16 @@ $fontWeightBold: 700;
 
 
 // FONT SIZES
-$fontSizeXSmall: 0.8rem;
+$fontSizeTitle: 2.8rem;
+$fontSizeNormal: 1.1rem;
 $fontSizeMedium: 1.2rem;
 $fontSizeLarge: 1.3rem;
 $fontSizeXLarge: 1.4rem;
-$fontSizeXXLarge: 1.5rem;
 
 
 // LINE HEIGHT
 $lineHeightDefault: 1rem;
+
+
+// LETTER SPACING
+$letterSpacingDefault: 1px;
