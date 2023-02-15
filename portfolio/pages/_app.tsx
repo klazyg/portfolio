@@ -11,10 +11,10 @@ export default function MyApp({ Component, pageProps }: Props) {
   return (
     <>
       <Head>
-        <title>Portfolio Klaudia Zygmunt</title>
+        <title>Klaudia Zygmunt - Portfolio, Front-End Developer, IT</title>
         <meta name="description" content="Portfolio created by Klaudia Zygmunt" />
         <meta name="keywords" content="PORTFOLIO PROJECT" />
-        <link rel="icon" href="/logo_icon.png" />
+        <link rel="icon" href="/logo_icon.svg" />
       </Head>
       <Layout>
         <Component {...pageProps} />
