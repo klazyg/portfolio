@@ -5,10 +5,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: $fontDefault;
-  background-color: $colorBg;
+  background: $colorBgGradient !important;
   color: $colorFontWhite;
   font-size: $fontSizeDefault;
   line-height: $lineHeightDefault;
+  letter-spacing: $letterSpacingDefault;
 }
 
 a {
