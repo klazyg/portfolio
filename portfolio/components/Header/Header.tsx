@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { ImEmbed } from "react-icons/im";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
     return (
-        <header className={styles.section}>
+        <div className={styles.section}>
             <div className={styles.position}>
                 <div className={styles.logo}>
                     <Link href="/">
@@ -51,12 +50,8 @@ const Header: React.FC = () => {
                         </li>
                     </ul>
                 </nav>
-                <div className={styles.mode}>
-                    <MdDarkMode className={styles.moon} size="3rem" color="#5f50fd" />
-                    <MdLightMode className={styles.sun} size="3rem" color="#ffac26" />
-                </div>
             </div>
-        </header>
+        </div>
     );
 }
 
