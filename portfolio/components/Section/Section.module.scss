@@ -1,0 +1,31 @@
+@import '/styles/main.module.scss';
+
+.gradient {
+    background: $gradientBg;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 1rem;
+}
+
+.title {
+    @include FontSizeTitleSection;
+    font-weight: $fontWeightBold;
+    padding-bottom: 3rem;
+}
+
+.subtitle {
+    @include FontSizeLarge;
+    font-weight: $fontWeightMedium;
+    padding-bottom: 6rem;
+    width: 80%;
+    line-height: calc(#{$lineHeightDefault} * 2);
+
+    @media (max-width: 1200px) {
+        line-height: calc(#{$lineHeightDefault} * 1.5);
+        padding-bottom: 4rem;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+}
