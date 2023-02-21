@@ -1,0 +1,43 @@
+@import '/styles/main.module.scss';
+
+.position {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+
+    @media (max-width: 950px) {
+        gap: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.description {
+    @include FontSizeNormal;
+    font-weight: $fontWeightMedium;
+    line-height: calc(#{$lineHeightDefault} * 1.8);
+    text-align: left;
+
+    @media (max-width: 950px) {
+        line-height: calc(#{$lineHeightDefault} * 1.5);
+    }
+}
+
+.image {
+    padding: 4rem;
+    transition: 0.8s;
+    cursor: pointer;
+
+    @media (max-width: 950px) {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    .image_mobile img {
+        display: none;
+    }
+}
