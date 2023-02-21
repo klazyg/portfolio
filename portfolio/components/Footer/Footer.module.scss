@@ -1,14 +1,18 @@
 @import '/styles/main.module.scss';
 
-.position {
-    position: relative;
+.footer {
+    padding: 1.5rem;
+    border-top: 0.1rem solid $colorBorder;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .text {
-    position: absolute;
-    padding: 1.5rem;
-    width: 100%;
-    border-top: 0.1rem solid $colorBorder;
+    @include FontSizeNormal;
     font-weight: $fontWeightMedium;
-    text-align: right;
+
+    @media (max-width: 768px) {
+        padding: 0.5rem;
+    }
 }

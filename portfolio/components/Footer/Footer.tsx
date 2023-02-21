@@ -2,9 +2,9 @@ import styles from "./Footer.module.scss";
 
 const Footer: React.FC = () => {
   return (
-    <div className={styles.position}>
+    <footer className={styles.footer}>
       <span className={styles.text}>© {new Date().getFullYear()} Klaudia Zygmunt</span>
-    </div>
+    </footer>
   );
 };
 
