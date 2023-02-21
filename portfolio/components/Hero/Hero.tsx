@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from "./Hero.module.scss";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
-import { Typewriter } from "react-simple-typewriter";
 
 const Hero: React.FC = () => {
     return (
@@ -9,13 +8,9 @@ const Hero: React.FC = () => {
             <div className={styles.position}>
                 <div className={styles.main}>
                     <div className={styles.title}>
-                        <Typewriter
-                            words={["Hello, I am Klaudia!"]}
-                            loop={20}
-                            typeSpeed={80}
-                            deleteSpeed={50}
-                            delaySpeed={1500}
-                        />
+                        <span className={styles.title_text}>
+                            Hello, I am Klaudia!
+                        </span>
                     </div>
                     <div className={styles.subtitle}>
                         <span className={styles.subtitle_text}>
@@ -24,11 +19,10 @@ const Hero: React.FC = () => {
                     </div>
                     <div className={styles.position_text}>
                         <div className={styles.text}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vivamus convallis, diam vel faucibus
-                            volutpat Lorem Ipsum is simply dummy text of
-                            the printing and typesetting industry. But I must
-                            explain to you how all this mistaken idea.
+                        My skills focus on React and Next.js technologies which allow me to create
+                        innovative projects. My goal is to write clean and effective code and develop my skills
+                        I enjoy solving problems. Thanks to my previous experience as a Project Manager, 
+                        I am organized and focused on delivering the project.
                         </div>
                     </div>
                 </div>
