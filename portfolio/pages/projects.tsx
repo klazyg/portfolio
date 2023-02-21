@@ -1,46 +1,40 @@
 import { useState, useEffect } from 'react';
-import Link from "next/link";
-import Image from "next/image";
-import { AiOutlineLink } from "react-icons/ai";
-import styles from "../styles/projects.module.scss";
+import Section from '@/components/Section/Section';
+import ProjectList from '@/components/Project/ProjectList/ProjectList';
+import styles from '../styles/style.module.scss'
 
 const projects = [
   {
-    number: "1.",
     name: "Budget App",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    description: "My Budget App allows users to add different types of transactions with a simple form. Thanks to the clear layout, users can easily monitor their expenses, savings and income, while the graph and summaries help to quickly understand their finances.",
     linkGithub: 'https://github.com/klazyg/Budget-App',
     linkDemo: '/',
     image: "/jest_icon.svg"
   },
   {
-    number: "2.",
     name: "Portfolio",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    description: "I used Next.js technology and implemented various effects and hooks to increase interactivity on my Portfolio page. Thanks to a simple and clear interface, visitors can easily learn about my projects and skills, which allows for a more complete understanding of my profile as a Front-End Developer. To ensure that the page is displayed perfectly on different devices, I paid special attention to responsiveness.",
     linkGithub: 'https://github.com/klazyg/portfolio/tree/main/portfolio',
     linkDemo: '/',
     image: "/jest_icon.svg"
   },
   {
-    number: "3.",
     name: "To Do List",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    description: "To Do List is a simple yet useful application that allows users to add, delete and edit tasks in an intuitive way. It's easy to create a to-do list, then track progress and mark tasks as done. Thanks to this tool, you can manage your time and duties more effectively.",
     linkGithub: 'https://github.com/klazyg/ToDo-List-App',
     linkDemo: '/',
     image: "/jest_icon.svg"
   },
   {
-    number: "4.",
     name: "Weather App",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    description: "Weather App is a web application that uses a weather API to display weather data for any entered location. Users can see the current temperature, real feel, humidity, wind speed, as well as the highest and lowest temperatures. The app provides a simple and convenient way for users to check the weather conditions in any location.",
     linkGithub: 'https://github.com/klazyg/weather-app',
     linkDemo: '/',
     image: "/jest_icon.svg"
   },
 ];
 
-
-const Projects: React.FC = () => {
+const Projects = () => {
   const [isClient, setClient] = useState(false);
 
   useEffect(() => {
@@ -49,68 +43,15 @@ const Projects: React.FC = () => {
 
   return (
     <div className={styles.section}>
-      <div className={styles.title}>
-        <span className={styles.gradient}>&lt;</span>
-        Projects
-        <span className={styles.gradient}>&gt;</span>
-      </div>
-      <div className={styles.text}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </div>
-      {isClient && projects.map((project, index) => (
-        <div className={`${styles.position} ${index === projects.length - 1 ? styles.last : ""}`}
-          key={index}>
-          <div className={styles.inner}>
-            <Link href={project.linkDemo} target="_blank" rel="noopener noreferrer">
-              <div className={styles.portfolio}>
-                <div className={styles.project}>
-                  <div className={styles.number}>
-                    <span>{project.number}</span>
-                  </div>
-                  <div className={styles.name}>
-                    <span className={styles.gradient}>
-                      {project.name}
-                    </span>
-                  </div>
-                  <div className={styles.description}>
-                    <span>
-                      {project.description}
-                    </span>
-                  </div>
-                  <div className={styles.icon__position}>
-                    <Link href={project.linkGithub} target="_blank" rel="noopener noreferrer">
-                      <div className={styles.icon}>
-                        <AiOutlineLink size="2rem" />
-                        <div className={styles.link}>
-                          <b>GitHub Repo</b>
-                        </div>
-                      </div>
-                    </Link>
-                    <div className={styles.btn}>
-                      <Link href={project.linkDemo} target="_blank" rel="noopener noreferrer">
-                        <span>View demo</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.image__position}>
-                  <div className={styles.image}>
-                    <Image
-                      src={project.image}
-                      width={450}
-                      height={350}
-                      alt={project.name}
-                    />
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-          {index !== projects.length - 1 && <div className={styles.border}></div>}
-        </div>
-      ))}
+      <Section
+        title="Projects"
+        subtitle="I invite you to familiarize yourself with my latest projects 
+        that I have recently worked on, using various technologies and tools. 
+        Here you will find different kinds of projects, including websites, 
+        web applications, and interactive components." />
+      {isClient && (
+        <ProjectList projects={projects} />
+      )}
     </div>
   );
 }
