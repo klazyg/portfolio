@@ -3,21 +3,9 @@
 // FONT DEFAULT SIZE
 $fontSizeDefault: 16px;
 
+
 // FONT FAMILIES
 $fontDefault: 'Montserrat', sans-serif;
-
-// FONT-WEIGHTS
-$fontWeightMedium: 500;
-$fontWeightSemiBold: 600;
-$fontWeightBold: 700;
-
-
-// FONT SIZES
-$fontSizeTitle: 2.8rem;
-$fontSizeNormal: 1.1rem;
-$fontSizeMedium: 1.2rem;
-$fontSizeLarge: 1.3rem;
-$fontSizeXLarge: 1.4rem;
 
 
 // LINE HEIGHT
@@ -26,3 +14,226 @@ $lineHeightDefault: 1rem;
 
 // LETTER SPACING
 $letterSpacingDefault: 1px;
+
+
+// FONT-WEIGHTS
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+
+
+// FONT SIZES
+$fontSizeTitle: 4.8rem;
+$fontSizeSubtitle: 3.8rem;
+$fontSizeTitleSection: 2.8rem;
+$fontSizeName: 2.2rem;
+$fontSizeNormal: 1.1rem;
+$fontSizeMedium: 1.2rem;
+$fontSizeLarge: 1.3rem;
+$fontSizeXLarge: 1.4rem;
+
+
+// RESPONSIVE FONT SIZES
+$fontSizeTitleXL: 3.5rem;
+$fontSizeSubtitleXL: 2.8rem;
+$fontSizeTitleSectionXL: 2rem;
+$fontSizeNameXL: 1.8rem;
+$fontSizeNormalXL: 1rem;
+$fontSizeMediumXL: 1.1rem;
+$fontSizeLargeXL: 1.2rem;
+$fontSizeXLargeXL: 1.3rem;
+
+$fontSizeTitleL: 3rem;
+$fontSizeSubtitleL: 2.4rem;
+$fontSizeTitleSectionL: 1.7rem;
+$fontSizeNameL: 1.6rem;
+$fontSizeNormalL: 0.9rem;
+$fontSizeMediumL: 1rem;
+$fontSizeLargeL: 1.1rem;
+$fontSizeXLargeL: 1.2rem;
+
+$fontSizeTitleM: 2.6rem;
+$fontSizeSubtitleM: 2rem;
+$fontSizeTitleSectionM: 1.3rem;
+$fontSizeNameM: 1.2rem;
+$fontSizeNormalM: 0.8rem;
+$fontSizeMediumM: 0.9rem;
+$fontSizeLargeM: 1rem;
+$fontSizeXLargeM: 1.1rem;
+
+$fontSizeTitleS: 1.9rem;
+$fontSizeSubtitleS: 1.6rem;
+$fontSizeTitleSectionS: 1.1rem;
+$fontSizeNameS: 1.1rem;
+$fontSizeNormalS: 0.7rem;
+$fontSizeMediumS: 0.8rem;
+$fontSizeLargeS: 0.9rem;
+$fontSizeXLargeS: 1rem;
+
+
+@mixin FontSizeTitle {
+  font-size: $fontSizeTitle;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeTitleXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeTitleL;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeTitleM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeTitleS;
+  }
+}
+
+
+@mixin FontSizeSubtitle {
+  font-size: $fontSizeSubtitle;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeSubtitleXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeSubtitleL;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeSubtitleM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeSubtitleS;
+  }
+}
+
+
+@mixin FontSizeTitleSection {
+  font-size: $fontSizeTitleSection;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeTitleSectionXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeTitleSectionL;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeTitleSectionM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeTitleSectionS;
+  }
+}
+
+
+@mixin FontSizeName {
+  font-size: $fontSizeName;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeNameXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeNameL;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeNameM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeNameS;
+  }
+}
+
+
+@mixin FontSizeNormal {
+  font-size: $fontSizeNormal;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeNormalXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeNormalL;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeNormalM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeNormalS;
+  }
+}
+
+
+@mixin FontSizeMedium {
+  font-size: $fontSizeMedium;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeMediumXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeMediumL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeMediumM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeMediumS;
+  }
+}
+
+
+@mixin FontSizeLarge {
+  font-size: $fontSizeLarge;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeLargeXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeLargeL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeLargeM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeLargeS;
+  }
+}
+
+
+@mixin FontSizeXLarge {
+  font-size: $fontSizeXLarge;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $fontSizeXLargeXL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeXLargeL;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: $fontSizeXLargeM;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: $fontSizeXLargeS;
+  }
+}
