@@ -14,6 +14,7 @@ export default function MyApp({ Component, pageProps }: Props) {
         <title>Klaudia Zygmunt - Portfolio, Front-End Developer, IT</title>
         <meta name="description" content="Portfolio created by Klaudia Zygmunt" />
         <meta name="keywords" content="PORTFOLIO PROJECT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo_icon.svg" />
       </Head>
       <Layout>
