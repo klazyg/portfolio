@@ -27,19 +27,19 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
                 <div className={styles.icons}>
-                    <Link href="https://github.com/klazyg" target="_blank">
+                    <Link href="https://github.com/klazyg" target="_blank" rel="noopener noreferrer">
                         <AiFillGithub
                             className={styles.icon}
                             size={90}
                         />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/klaudia-zygmunt/" target="_blank">
+                    <Link href="https://www.linkedin.com/in/klaudia-zygmunt/" target="_blank" rel="noopener noreferrer">
                         <AiFillLinkedin
                             className={styles.icon}
                             size={90}
                         />
                     </Link>
-                    <a href="mailto:contact@klaudiazygmunt.com" target='_blank'>
+                    <a href="mailto:contact@klaudiazygmunt.com" target='_blank' rel="noopener noreferrer">
                         <AiFillMail
                             className={styles.icon}
                             size={90}

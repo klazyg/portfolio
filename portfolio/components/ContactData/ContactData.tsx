@@ -7,7 +7,7 @@ const ContactData: React.FC = () => {
       <div className={styles.title}>
         <span className={styles.gradient}>E-mail:</span>
       </div>
-      <a href="mailto:contact@klaudiazygmunt.com" target='_blank'>
+      <a href="mailto:contact@klaudiazygmunt.com" target='_blank' rel="noopener noreferrer">
         <span className={styles.data}>contact@klaudiazygmunt.com</span>
       </a>
       <div className={styles.title}>
