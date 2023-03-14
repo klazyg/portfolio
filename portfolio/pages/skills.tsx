@@ -39,10 +39,6 @@ const skills = [
     name: "Github",
     icon: "/github_icon.svg",
   },
-  {
-    name: "Jest",
-    icon: "/jest_icon.svg",
-  },
 ];
 
 const Skills = () => {
