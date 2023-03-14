@@ -4,14 +4,6 @@ import styles from "./AboutDescription.module.scss";
 const AboutDescription: React.FC = () => {
     return (
         <div className={styles.position}>
-            <div className={styles.image_mobile}>
-                <Image
-                    src="/jest_icon.svg"
-                    width={250}
-                    height={200}
-                    alt=""
-                />
-            </div>
             <div className={styles.description}>
                 <p>As a Front-End Developer, my passion is coding, problem-solving, and software design.
                     I focus on utilizing the latest technologies and innovative solutions to create
@@ -30,14 +22,6 @@ const AboutDescription: React.FC = () => {
                     countries, where I can see the beauty of the country without human interference and get
                     to know local people. Cooking various dishes from around the world is a source of joy
                     and relaxation for me.</p>
-            </div>
-            <div className={styles.image}>
-                <Image
-                    src="/jest_icon.svg"
-                    width={300}
-                    height={450}
-                    alt=""
-                />
             </div>
         </div>
     );
