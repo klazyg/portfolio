@@ -18,9 +18,9 @@ const projects = [
   },
   {
     name: "To Do List",
-    description: "To Do List is a simple yet useful application that allows users to add, delete and edit tasks in an intuitive way. It's easy to create a to-do list, then track progress and mark tasks as done. Thanks to this tool, you can manage your time and duties more effectively.",
+    description: "To Do List is a very simple yet useful application that allows users to add and delete tasks in an intuitive way. It's easy to create a to-do list, then track progress and mark tasks as done. Thanks to this tool, you can manage your time and duties more effectively.",
     linkGithub: 'https://github.com/klazyg/ToDo-List-App',
-    image: "/portfolio_website.png"
+    image: "/todolist_website.png"
   },
   {
     name: "Weather App",
