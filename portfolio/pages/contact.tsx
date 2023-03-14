@@ -1,5 +1,5 @@
-import Section from "@/components/Section/Section";
-import ContactForm from "@/components/Contact/ContactForm/ContactForm";
+import Section from "../components/Section/Section";
+import ContactData from "../components/ContactData/ContactData";
 import styles from "../styles/style.module.scss";
 
 const Contact: React.FC = () => {
@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
                 subtitle="If you would like to learn more about me or my work, 
                 please feel free to contact me. I would be happy to answer 
                 any questions." />
-            <ContactForm />
+            <ContactData />
         </div>
     );
 };
