@@ -1,0 +1,36 @@
+@import '/styles/main.module.scss';
+
+.position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    gap: 4rem;
+
+    @media (max-width: 992px) {
+        gap: 2rem;
+    }
+}
+
+.gradient {
+    background: $gradientBg;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    @include FontSizeName;
+    font-weight: $fontWeightBold;
+    text-align: center;
+
+    @media (max-width: 992px) {
+        padding-bottom: 0.5rem;
+    }
+}
+
+.data {
+    @include FontSizeName;
+    font-weight: $fontWeightMedium;
+    margin: 1rem;
+}
