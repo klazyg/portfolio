@@ -3,7 +3,6 @@
 .portfolio {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 4rem;
     border-radius: 50px;
     box-shadow: 0 0 70px $colorBorder;
@@ -24,12 +23,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 50%;
     padding-right: 3rem;
-
-    @media (max-width: 1250px) {
-        width: 100%;
-    }
 }
 
 .number {
@@ -79,14 +73,11 @@
 .icon__position {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 0 2rem 0;
 
     @media (max-width: 1250px) {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
         padding: 0.5rem 0 1rem 0;
     }
 }
@@ -141,17 +132,9 @@
 
 .image {
     width: 100%;
+    height: auto;
     display: flex;
-    justify-content: flex-end;
-
-    &_img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    img {
-        max-width: 60%;
-    }
+    justify-content: center;
 
     @media (max-width: 950px) {
         img {

@@ -30,7 +30,7 @@ const SingleProject = ({ index, name, description, image, linkDemo, linkGithub }
                             <Image
                                 src={image}
                                 width={250}
-                                height={150}
+                                height={140}
                                 alt={name}
                             />
                         </div>
@@ -49,19 +49,14 @@ const SingleProject = ({ index, name, description, image, linkDemo, linkGithub }
                                 </div>
                             </div>
                         </Link>
-                        <div className={styles.btn}>
-                            <Link href={linkDemo} target="_blank" rel="noopener noreferrer">
-                                <b>View demo</b>
-                            </Link>
-                        </div>
                     </div>
                 </div>
                 <div className={styles.image__position}>
                     <div className={styles.image}>
                         <Image
                             src={image}
-                            width={450}
-                            height={350}
+                            width={400}
+                            height={240}
                             alt={name}
                         />
                     </div>
