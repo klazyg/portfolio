@@ -19,10 +19,10 @@ const Hero: React.FC = () => {
                     </div>
                     <div className={styles.position_text}>
                         <div className={styles.text}>
-                        My skills focus on React and Next.js technologies which allow me to create
-                        innovative projects. My goal is to write clean and effective code and develop my skills
-                        I enjoy solving problems. Thanks to my previous experience as a Project Manager, 
-                        I am organized and focused on delivering the project.
+                            My skills focus on React and Next.js technologies which allow me to create
+                            innovative projects. My goal is to write clean and effective code and develop my skills
+                            I enjoy solving problems. Thanks to my previous experience as a Project Manager,
+                            I am organized and focused on delivering the project.
                         </div>
                     </div>
                 </div>
@@ -39,12 +39,12 @@ const Hero: React.FC = () => {
                             size={90}
                         />
                     </Link>
-                    <Link href="https://google.com" target="_blank">
+                    <a href="mailto:contact@klaudiazygmunt.com" target='_blank'>
                         <AiFillMail
                             className={styles.icon}
                             size={90}
                         />
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
