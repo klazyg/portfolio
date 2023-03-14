@@ -5,7 +5,6 @@ interface Project {
     name: string;
     description: string;
     linkGithub: string;
-    linkDemo: string;
     image: string;
 }
 
@@ -24,7 +23,6 @@ const ProjectList = ({ projects }: ProjectListProps) => {
                         name={project.name}
                         description={project.description}
                         linkGithub={project.linkGithub}
-                        linkDemo={project.linkDemo}
                         image={project.image}
                     />
                     {index !== projects.length - 1 && <div className={styles.border}></div>}
